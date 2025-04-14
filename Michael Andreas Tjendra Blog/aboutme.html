@@ -4,29 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Saya</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    background-color: #333;
+    padding: 0.5rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.content-section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 0;
+    border: 2px solid #f4f4f4;
+}
+
+.profile-text {
+    flex: 1;
+}
+
+h2 {
+    color: #4CAF50;
+    margin-top: 0;
+}
+
+h3 {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    margin-top: 1rem;
+}
+.profile-text {
+    flex: 1;
+    color: white; /* Untuk teks intro */
+}
+
+.profile-text h2 {
+    color: white; /* Untuk nama */
+    margin-top: 0;
+}
+    </style>
 </head>
 <body>
     <header>
-        <h1>Tentang Saya</h1>
+        <h1>About Me</h1>
     </header>
     <nav>
         <a href="main.html" class="nav-link">Kembali ke Beranda</a>
     </nav>
     <section class="content-section">
-        <h2>Michael Andreas Tjendra</h2>
-        <p>Saya adalah seorang mahasiswa Computer Science yang tertarik pada machine learning dan AI. Hobi saya adalah mempelajari teknologi terbaru dan menerapkannya dalam proyek-proyek pribadi, terutama yang berkaitan dengan analisis data dan prediksi.</p>
-        <img src="pictures/profile.jpg" alt="Foto Profil" class="profile-img">
+        <div class="profile-container">
+            <img src="pictures/IMG_20220806_191201.jpg" alt="Foto Profil" class="profile-img">
+            <div class="profile-text">
+                <h2>Michael Andreas Tjendra</h2>
+                <p>Saya adalah seorang mahasiswa Computer Science yang tertarik pada machine learning dan AI. Hobi saya adalah mempelajari teknologi terbaru dan menerapkannya dalam proyek-proyek pribadi, terutama yang berkaitan dengan analisis data dan prediksi.</p>
+            </div>
+        </div>
         <h3>Media Sosial</h3>
         <ul>
-            <li><a href="https://instagram.com/michaelandreas">Instagram</a></li>
-            <li><a href="https://linkedin.com/in/michaelandreas">LinkedIn</a></li>
-            <li><a href="https://github.com/michaelandreas">GitHub</a></li>
+            <li><a href="https://www.instagram.com/michael_atj/">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/michael-andreas-tjendra-695758264?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bcxyjo2XgQ4musReLp%2BpT7Q%3D%3D">LinkedIn</a></li>
+            <li><a href="https://github.com/Michaelatj">GitHub</a></li>
         </ul>
     </section>
     <footer>
-        <p>© 2023 Michael Andreas Tjendra. All rights reserved.</p>
+        <p>© 2025 Michael Andreas Tjendra. All rights reserved.</p>
     </footer>
 </body>
 </html>

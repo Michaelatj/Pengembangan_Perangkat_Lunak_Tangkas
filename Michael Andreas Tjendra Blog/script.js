@@ -1,18 +1,25 @@
 function prediksi() {
     const temperatur = parseFloat(document.getElementById('temperatur').value);
-    const promosi = parseFloat(document.getElementById('promosi').value);
+    const promosi = parseInt(document.getElementById('promosi').value);
     const error = document.getElementById('error');
     const hasil = document.getElementById('hasil');
     
     // Validasi input
-    if (isNaN(temperatur) || isNaN(promosi)) {
-        error.textContent = "Masukkan angka yang valid.";
-        hasil.textContent = "";
+    if (isNaN(temperatur)) {
+        error.textContent = "Masukkan temperatur yang valid (antara 5-37°C).";
+        hasil.textContent = "-";
         return;
     }
-    if (promosi !== 0 && promosi !== 1) {
-        error.textContent = "Promosi harus 0 atau 1.";
-        hasil.textContent = "";
+    
+    if (isNaN(promosi)) {
+        error.textContent = "Pilih status promosi.";
+        hasil.textContent = "-";
+        return;
+    }
+    
+    if (temperatur < 5 || temperatur > 37) {
+        error.textContent = "Temperatur harus antara 5-37°C.";
+        hasil.textContent = "-";
         return;
     }
     
@@ -23,5 +30,5 @@ function prediksi() {
     const prediksi = intercept + (coefTemp * temperatur) + (coefPromo * promosi);
     
     error.textContent = "";
-    hasil.textContent = prediksi.toFixed(2);
+    hasil.textContent = prediksi.toFixed(2) + " $";
 }
