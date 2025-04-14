@@ -146,37 +146,23 @@ Intercept: 0.1510931420856565
     <section id="demo" class="content-section">
         <h2>5. Demo Prediksi Penjualan</h2>
         <p>Masukkan temperatur dan promosi untuk memprediksi penjualan minuman menggunakan model yang telah dilatih.</p>
-        
         <div class="input-group">
-            <label for="temperatur">Temperatur (°C):</label>
-            <input type="number" id="temperatur" step="0.1" placeholder="25.5" min="5" max="37" required>
+            <label>Temperatur (°C):</label>
+            <input type="number" id="temperatur" step="0.1" placeholder="25.5" required>
         </div>
-        
         <div class="input-group">
-            <label for="promosi">Promosi:</label>
-            <select id="promosi" required>
-                <option value="" disabled selected>Pilih status promosi</option>
-                <option value="1">Sedang promosi (1)</option>
-                <option value="0">Tidak promosi (0)</option>
-            </select>
+            <label>Promosi (0 atau 1):</label>
+            <input type="number" id="promosi" min="0" max="1" placeholder="1" required>
         </div>
-        
-        <button onclick="prediksi()">
-            <span class="button-text">Prediksi Penjualan</span>
-            <span class="button-icon">🔮</span>
-        </button>
-        
-        <div class="result-container">
-            <h3>Hasil Prediksi:</h3>
-            <p id="hasil" class="result-value">-</p>
-            <p id="error" class="error-message"></p>
-        </div>
+        <button onclick="prediksi()">Prediksi Penjualan</button>
+        <p>Hasil: <span id="hasil"></span></p>
+        <p id="error" style="color: red;"></p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Michael Andreas Tjendra. All rights reserved.</p>
-        <p>Follow me on <a href="https://github.com/Michaelatj" target="_blank">GitHub</a></p>
+        <p>© 2023 Michael Andreas Tjendra. All rights reserved.</p>
+        <p>Follow me on <a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
     </footer>
 
     <script src="script.js"></script>
