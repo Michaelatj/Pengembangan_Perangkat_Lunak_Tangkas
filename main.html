@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Creative Blogs</title>
+  <style>
+    :root {
+      --bg: #f5f1ed;
+      --text: #333333;
+      --accent: #a67c52;
+      --card-bg: #ffffff;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: var(--bg);
+      /* Subtle polka-dot pattern for cozy feel */
+      background-image: radial-gradient(circle at 100px 100px, rgba(0,0,0,0.02) 1px, transparent 0),
+                        radial-gradient(circle at 200px 200px, rgba(0,0,0,0.02) 1px, transparent 0);
+      background-size: 200px 200px;
+      color: var(--text);
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      display: block;
+      margin: 1rem auto;
+      width: 80px;
+      height: 4px;
+      background-color: var(--accent);
+      border-radius: 2px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      color: #555555;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background-color: var(--card-bg);
+      border-left: 6px solid var(--accent);
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      width: 90%;
+      max-width: 400px;
+      text-align: left;
+      padding: 1.5rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+    }
+    .card a {
+      text-decoration: none;
+      color: var(--accent);
+      font-size: 1.5rem;
+      font-weight: 500;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #555555;
+      line-height: 1.4;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.85rem;
+      color: #777777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Creative Blogs</h1>
+    <p>Dive into our stories below!</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <a href="Diky%20Diwa%20Suwanto%20Blog/index.html">Diky Diwa Suwanto</a>
+      <p>✨ Discover Diky's unique projects and insights.</p>
+    </div>
+    <div class="card">
+      <a href="Michael%20Andreas%20Tjendra%20Blog/index.html">Michael Andreas Tjendra</a>
+      <p>🚀 Explore Michael's code snippets and AI experiments.</p>
+    </div>
+    <div class="card">
+      <a href="Reno%20Kurniawan%20Panjaitan%20Blog/index.html">Reno Kurniawan Panjaitan</a>
+      <p>🎨 Check out Reno's tutorials and creative articles.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Pengembangan Perangkat Lunak Tangkas
+  </footer>
+</body>
+</html>
